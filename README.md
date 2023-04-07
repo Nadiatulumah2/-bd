@@ -6,59 +6,59 @@ mysql> create database latihan02;
 # 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam database latihan1!
 
 mysql>create table biodata (nama varchar (15), alamat varchar (15));
-![gambar1](//BD%20NADIA/ss)
+![gambar1](ss/1.png)
 
 # 3. Tambahkan sebuah kolom keterangan (varchar 15), sebagai kolom terakhir!
 mysql> alter table biodata add column keterangan varchar (15);
 mysql> desc biodata
-![gambar1](//BD%20NADIA/)
+![gambar1](ss/1.png)
 
 # 4. Tambahkan kolom id (int 11) di awal (sebagai kolom pertama)!
  mysql> alter table biodata add column id int(11) first;
- ![gambar1](ss/ss2.PNG)
+ ![gambar1](ss/2.png)
 
 # 5. Sisipkan sebuah kolom dengan nama phone (varchar 15) setelah kolom alamat!
 mysql> alter table biodata add column phone varchar(15) after alamat;
 mysql> desc biodata;
-![gambar1](ss/ss2.PNG)
+![gambar1](ss/2.png)
 
 # 6. Ubah tipe data kolom id menjadi char(11)!
 mysql> alter table biodata modify column id char (11);
-![gambar1](ss/ss2.PNG)
+![gambar1](ss/2.png)
 
 # 7. Ubah nama kolom phone menjadi hp (varchar 20)!
 mysql> alter table biodata change column phone hp varchar(20);
 mysql> desc biodata;
-![gambar1](ss/ss3.PNG)
+![gambar1](ss/3.png)
 
 # 8. Tambahkan kolom email setelah kolom hp!
 mysql> alter table biodata add column email varchar(11) after hp;
 mysql> desc biodata;
-![gambar1](ss/ss3.PNG)
+![gambar1](ss/3.png)
 
 # 9. Hapus kolom keterangan dari tabel!
 mysql> alter table biodata drop column keterangan;
-![gambar1](ss/ss4.PNG)
+![gambar1](ss/4.png)
 
 # 10. Ganti nama tabel menjadi data_mahasiswa!
 mysql> alter table biodata rename data_mahasiswa;
 mysql> desc data_mahasiswa;
-![gambar1](ss/ss4.PNG)
+![gambar1](ss/4.png)
 
 # 11. Ganti nama field id menjadi nim!
 mysql> alter table data_mahasiswa change id nim;
 mysql> desc data_mahasiswa;
-![gambar1](ss/ss5.PNG)
+![gambar1](ss/5.png)
 
 # 12. Jadikan nim sebagai PRIMARY KEY!
 mysql>  alter table data_mahasiswa add primary key (nim);
 mysql> desc data_mahasiswa;
-![gambar1](ss/ss5.PNG)
+![gambar1](ss/5.png)
 
 # 13. Jadikan kolom email sebagai UNIQUE KEY
 mysql> alter table data_mahasiswa add unique key (email);
 mysql> desc data_mahasiswa;
-![gambar1](ss/ss6.PNG)
+![gambar1](ss/6.png)
 
 # C.	Data dan Analisis 
 ## 1.	Apa maksud dari Int (11)?
