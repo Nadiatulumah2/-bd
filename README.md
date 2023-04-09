@@ -2,6 +2,7 @@
 <<<<<<< HEAD (current change)
  # 1. Buat sebuah database dengan nama latihan2!
 mysql> create database latihan02;
+![gambar1](ss/1.png)
 =======
 # 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam database latihan1!
 
